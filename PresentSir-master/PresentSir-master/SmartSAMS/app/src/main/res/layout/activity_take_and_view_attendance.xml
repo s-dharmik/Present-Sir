@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.smartsams.Teacher.take_and_view_attendance"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome Sir !"
+            android:textColor="@color/black"
+            android:fontFamily="@font/baloo"
+            android:textSize="40dp"
+            android:padding="20dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_scan_view"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/scan_device"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:background="@drawable/ic_baseline_bluetooth_searching_24"
+            android:backgroundTint="@color/orange1"
+            android:layout_marginLeft="30dp"/>
+        <TextView
+            android:id="@+id/scan_device_text"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Scan Device"
+            android:textColor="@color/black"
+            android:fontFamily="@font/baloo"
+            android:textSize="15dp"
+            android:layout_below="@id/scan_device"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/View_attendance"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:background="@drawable/ic_baseline_attendance_book"
+            android:backgroundTint="@color/orange1"
+            android:layout_marginLeft="95dp"
+            android:layout_toRightOf="@id/scan_device"/>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="View Attendance"
+            android:textColor="@color/black"
+            android:fontFamily="@font/baloo"
+            android:textSize="15dp"
+            android:layout_below="@id/scan_device"
+            android:layout_marginLeft="70dp"
+            android:gravity="center"
+            android:layout_toRightOf="@id/scan_device_text"
+            />
+
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvNewDevices"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/button_scan_view"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_scan_view"
+        tools:ignore="MissingConstraints" />
+
+
+</LinearLayout>

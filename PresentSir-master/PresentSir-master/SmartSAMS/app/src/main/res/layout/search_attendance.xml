@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Attendance.Search_attendance">
+
+   <RelativeLayout
+       android:id="@+id/Srelativelayout"
+       android:layout_width="match_parent"
+       android:layout_height="60dp">
+
+       <EditText
+           android:id="@+id/search_enroll_num"
+           android:layout_width="250dp"
+           android:layout_height="match_parent"
+           android:hint="Enter Enrollment Number"
+           android:padding="10dp"
+           android:inputType="number"
+          />
+
+       <Button
+           android:layout_width="130dp"
+           android:layout_height="60dp"
+           android:layout_alignLeft="@id/search_enroll_num"
+           android:layout_marginLeft="269dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:backgroundTint="@color/orange"
+           android:text="SEARCH"
+           android:textColor="#ffffff" />
+
+   </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Search_attendance_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Srelativelayout"
+        android:layout_marginTop="30dp"
+        />
+
+</RelativeLayout>

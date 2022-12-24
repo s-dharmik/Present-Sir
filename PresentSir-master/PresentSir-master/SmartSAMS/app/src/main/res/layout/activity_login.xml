@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="80dp"
+    tools:context=".LoginActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layuoutemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layoutpassword"
+        android:layout_marginBottom="35dp">
+         <EditText
+             android:id="@+id/login_email"
+             android:hint="Email"
+             android:inputType="textEmailAddress"
+             android:textColor="@color/colorText"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/login_loading"
+        android:layout_marginBottom="45dp"
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:id="@+id/login_password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/login_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_above="@id/btn_login"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_above="@id/link_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="195dp"
+        android:backgroundTint="@color/blue"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        />
+    <TextView
+        android:id="@+id/link_reg"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

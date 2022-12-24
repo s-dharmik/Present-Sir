@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userprofile"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/button"
+        android:padding="20dp"
+        android:layout_marginTop="-30dp">
+
+        <ImageView
+            android:id="@+id/UserProfileImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/student" />
+
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/UserProfileImage"
+            android:fontFamily="@font/baloo"
+            android:includeFontPadding="false"
+            android:hint="Name"
+            android:textSize="25dp"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/UserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/UserName"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/UserProfileImage"
+            android:includeFontPadding="false"
+            android:hint="email"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/image1"
+            android:src="@drawable/ic_profile"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/UserName_1"
+            android:hint="Name"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image1"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/image2"
+            android:src="@drawable/ic_benrollment"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/UserEnrollment"
+            android:textSize="20dp"
+            android:hint="Enrollment"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image2"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/image3"
+            android:src="@drawable/ic_deparment"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/UserDepartment"
+            android:textSize="20dp"
+            android:hint="Department"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image3"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/image4"
+            android:src="@drawable/ic_semester"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/UserSemester"
+            android:hint="Semester"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image4"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/image5"
+            android:src="@drawable/ic_baseline_access_time_24"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/UserYear"
+            android:hint="Year"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+</LinearLayout>

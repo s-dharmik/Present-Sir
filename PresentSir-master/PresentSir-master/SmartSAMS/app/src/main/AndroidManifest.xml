@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.smartsams">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARES_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartSAMSRegister">
+        <activity android:name=".Attendance.Search_attendance"></activity>
+        <activity android:name=".HOD.HOD_timetable" />
+        <activity android:name=".Attendance.Student_view_attendance" />
+        <activity android:name=".faculty_profile" />
+        <activity android:name=".Attendance.ViewAttendance" />
+        <activity android:name=".userprofile" />
+        <activity android:name=".Teacher.take_and_view_attendance" />
+        <activity android:name=".Bluetooth.Bluetoothscan" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SmartSAMSRegister" />
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/Theme.SmartSAMSRegister" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SmartSAMSRegister">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.SmartSAMSRegister" />
+        <activity
+            android:name=".Director.Director_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HOD.HOD_home"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Teacher.Teacher_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Student.Student_home"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

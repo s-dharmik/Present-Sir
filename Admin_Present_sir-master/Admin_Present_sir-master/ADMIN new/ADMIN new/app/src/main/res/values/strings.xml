@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">ADMIN present sir</string>
+    <string name="student">Student</string>
+    <string name="faculty">Faculty</string>
+    <string name="invalid_name">Please Enter Valid Name</string>
+    <string name="invalid_email">Enter Valid Email address</string>
+    <string name="invalid_enroll">enter valid enrollment</string>
+    <string name="invalid_joinyear">enter valid Year</string>
+    <string name="invalid_macadd">enter Valid MAC address</string>
+    <string name="invalid_password">Minimum 8 and maximum 15 characters, at least one uppercase letter, one lowercase letter, one number and one special character</string>
+    <string name="invalid_confirm_password">password does not match</string>
+    <string name="logout">Logout</string>
+
+    <string-array name="department_list">
+        <item>Select department</item>
+        <item>Computer Science</item>
+        <item>Information Technology</item>
+        <item>Civil</item>
+        <item>Mechanical</item>
+        <item>Auto Mobile</item>
+        <item>Electrical</item>
+    </string-array>
+
+    <string-array name="department_list_F">
+        <item>Select department</item>
+        <item>Computer Science</item>
+        <item>Information Technology</item>
+        <item>Civil</item>
+        <item>Mechanical</item>
+        <item>Auto Mobile</item>
+        <item>Electrical</item>
+        <item>General</item>
+    </string-array>
+
+    <string-array name="Semester_list">
+        <item>Select Semester</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="role_list" >
+        <item>Select role</item>
+        <item>Teacher</item>
+        <item>HOD</item>
+        <item>Director</item>
+
+    </string-array>
+
+</resources>
