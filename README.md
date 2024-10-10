@@ -8,3 +8,7 @@ Android Studio, Bluetooth Low Energy, Java, PHP, Google Firebase(Backend)
 - Firebase handles the storage and authentication of backend data using SMS.
 - Fast and Reliable system with around 60% accuracy.
 
+#  Here are screenshots of all 3 Working Applications!
+
+## This one is an Admin Application
+
