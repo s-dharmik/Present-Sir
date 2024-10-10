@@ -12,3 +12,4 @@ Android Studio, Bluetooth Low Energy, Java, PHP, Google Firebase(Backend)
 
 ## This one is an Admin Application
 
+![Admin](https://github.com/s-dharmik/Smart-SAMS/blob/master/ScreenShots/admin.jpg)
